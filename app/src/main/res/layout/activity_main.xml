@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:stretchColumns="*">
+
+    <TableRow
+        android:layout_marginTop="100dp">
+        <TextView
+            android:id="@+id/name"
+            android:layout_height="match_parent"
+            android:text="Họ Tên" />
+
+        <EditText
+            android:id="@+id/inputName"
+            android:layout_height="match_parent" />
+    </TableRow>
+    <TableRow
+        android:layout_marginTop="20dp">
+        <TextView
+            android:id="@+id/sdt"
+            android:layout_height="match_parent"
+            android:text="Số điện thoại" />
+
+        <EditText
+            android:id="@+id/inputPhone"
+            android:layout_height="match_parent" />
+    </TableRow>
+    <TableRow
+        android:layout_marginTop="20dp">
+        <TextView
+            android:id="@+id/sex"
+            android:text="Giới tính"/>
+
+        <Switch
+            android:id="@+id/switchSex"
+            android:textOn="Nữ"
+            android:textOff="Nam"
+            android:paddingRight="90dp"/>
+    </TableRow>
+    <TableRow
+        android:layout_marginTop="20dp">
+        <TextView
+            android:id="@+id/level"
+            android:text="Trình độ" />
+
+        <CheckBox
+            android:id="@+id/college"
+            android:text="Cao đẳng"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_column="1"/>
+    </TableRow>
+    <TableRow
+        android:layout_marginTop="20dp">
+        <CheckBox
+            android:id="@+id/university"
+            android:text="Đại học"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_column="1"/>
+    </TableRow>
+    <TableRow
+        android:layout_marginTop="20dp">
+        <CheckBox
+            android:id="@+id/graduated"
+            android:text="Cao học"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_column="1"/>
+    </TableRow>
+    <TableRow
+        android:layout_marginTop="20dp">
+        <TextView
+            android:id="@+id/age"
+            android:text="Tuổi" />
+
+        <SeekBar
+            android:id="@+id/seekAge"
+            android:layout_width="150dp"
+            android:layout_height="25dp"/>
+    </TableRow>
+    <TableRow
+        android:layout_marginTop="20dp">
+        <TextView
+            android:id="@+id/sport"
+            android:text="Thể thao" />
+
+        <CheckBox
+            android:id="@+id/checkSport"
+            android:text="Có tham gia"
+            android:layout_width="25dp"
+            android:layout_height="25dp" />
+    </TableRow>
+    <TableRow
+        android:layout_marginTop="20dp">
+        <TextView
+            android:id="@+id/music"
+            android:text="Thể loại nhạc" />
+
+        <RadioGroup
+            android:id="@+id/radGroup"
+            android:paddingLeft="10dp">
+            <RadioButton
+                android:id="@+id/rock"
+                android:text="Rock"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_marginBottom="10dp"/>
+
+            <RadioButton
+                android:id="@+id/rap"
+                android:text="Rap"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_marginBottom="10dp"/>
+
+            <RadioButton
+                android:id="@+id/pop"
+                android:text="Pop"
+                android:layout_width="match_parent"
+                android:layout_height="25dp" />
+        </RadioGroup>
+    </TableRow>
+    <TableRow
+        android:layout_marginTop="20dp">
+        <Button
+            android:id="@+id/btRegister"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="Register"></Button>
+
+        <Button
+            android:id="@+id/btClear"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="Clear">
+        </Button>
+    </TableRow>
+
+
+</TableLayout>
